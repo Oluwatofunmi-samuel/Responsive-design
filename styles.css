@@ -1,0 +1,732 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+header{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: rgba(245, 247, 250, 1);
+}
+
+.logo{
+    margin-left: 4rem;
+    height: auto;
+    width: 8rem;
+}
+
+.navbar{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15rem;
+    align-items: start;
+}
+
+.nav{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: rgba(24, 25, 31, 1);
+    font-weight: bold;
+}
+
+.login{
+    color: rgba(76, 175, 79, 1);
+    border: none;
+    background-color: rgba(245, 247, 250, 1);
+    margin-right: 0.8rem;
+}
+.signup{    
+    color: rgba(245, 247, 250, 1);
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgba(76, 175, 79, 1);
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* hero-section */
+
+.hero-section {
+    background-color: rgba(245, 247, 250, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    height: 100vh;
+    place-items: center; 
+}
+
+.texts {
+    max-width: 45rem;
+    margin-left: 3rem;
+}
+
+.texts h1 {
+    text-align: left;
+    color: rgba(77, 77, 77, 1);
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.highlight {
+    color: rgba(76, 175, 79, 1);
+}
+
+.texts p {
+    color: rgba(113, 113, 113, 1);
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.btn {
+    background-color: rgba(76, 175, 79, 1);
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.image {
+    max-width: 20rem;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+/* service-section */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.holder {
+    max-width: 35rem;
+}
+
+.container h2 {
+    color: rgba(77, 77, 77, 1);
+    font-size: 1.8rem;
+}
+
+.container p {
+    color: rgba(113, 113, 113, 1);
+    margin-top: 0.6rem;
+}
+
+.service-cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.cards {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    width: 50px;
+    height: auto;
+}
+
+.service-cards h1 {
+    color: rgba(77, 77, 77, 1);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.service-cards p {
+    color: rgba(113, 113, 113, 1);
+    font-size: 0.9rem;
+}
+
+ /* about us section */
+ #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+ .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;  
+    height: 80vh;
+    padding: 20px;
+}
+
+.textt {
+    max-width: 35rem;
+}
+
+.textt h2 {
+    color: rgba(77, 77, 77, 1);
+}
+
+.textt p {
+    color: rgba(113, 113, 113, 1);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.img {
+    max-width: 20rem;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Stats section */
+.stat {
+    background-color: rgba(245, 247, 250, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;  
+    height: auto;
+    padding: 2rem;
+    place-items: center;
+}
+
+.info {
+    max-width: 30rem;
+}
+
+.info h1 {
+    text-align: left;
+    color: rgba(24, 25, 31, 1);
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.info p {
+    color: rgba(24, 25, 31, 1);
+    margin-bottom: 1.2rem;
+}
+
+.count {
+    max-width: 20rem; 
+}
+
+.count img {
+    width: 100%;
+    height: auto;
+}
+
+/* membership-section */
+#membership-management {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.membership {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;  
+    height: 80vh;
+    padding: 20px;
+}
+
+.content {
+    max-width: 33rem;
+}
+
+.content h2 {
+    color: rgba(77, 77, 77, 1);
+}
+
+.content p {
+    color: rgba(113, 113, 113, 1);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.illustration {
+    max-width: 20rem;
+    margin-left: 5rem;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+}
+/* product section */
+
+.productt-container {
+    background-color: rgba(245, 247, 250, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.product-details {
+    max-width: 33rem;
+    padding: 1rem;
+}
+
+.product-details p {
+    color: rgba(113, 113, 113, 1);
+    margin: 1rem 0;
+}
+
+.product-imagec {
+    display: flex;
+    justify-content: center;
+}
+
+.product-image {
+    width: 80%;
+    max-width: 15rem;
+}
+
+.icons {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 25rem;
+}
+
+/* testimonial section  */
+.testimonial-section {
+    height: 36vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;  
+}
+
+.testimonial-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.testimonial-container h2 {
+    color: rgba(77, 77, 77, 1);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial-container p {
+    font-size: 16px;
+    color: rgba(113, 113, 113, 1);
+    margin-bottom: 30px;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(171, 190, 209, 0.4);
+    text-align: left;
+}
+
+.testimonial-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    padding: 15px;
+}
+
+.testimonial-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgba(113, 113, 113, 1);
+}
+
+.read-more {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+/* cta section */
+.cta-section {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background:rgba(76, 175, 79, 1);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* footer section  */
+
+.footer {
+    background: #1a1a1a;
+    color: white;
+}
+
+.footer .container {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-brand h3 {
+    display: flex;
+    align-items: center;
+    gap: px;
+}
+
+.footer-brand img {
+    width: 8rem;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    margin-top: 1rem;
+    width: 5rem;
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-column input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.subscribe {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subscribe button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design andriod phones*/
+@media screen and (max-width: 767px) {
+   .logo{
+    margin-left: 10px;
+    width: 7rem;
+   }
+
+   .navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11rem;
+}
+
+   .menu-toggle{
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+   }
+    
+   .nav li a {
+    display: block;
+    }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .login, .signup{
+        display: none;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .texts {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .texts h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .image {
+        margin: 2rem auto 0;
+        max-width: 80%;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: auto;
+    }
+
+    .img {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    .stat {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .info {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .membership {
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: auto;
+    }
+
+    .illustration {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    .content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .productt-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .product-details {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .product-details ul li{
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .product-imagec {
+        justify-content: center;
+    }
+
+    .product-image {
+        margin-left: 0;
+    }
+    
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-container h2 {
+        font-size: 24px;
+    }
+
+    .testimonial-container p {
+        font-size: 14px;
+    }
+
+    .cta-section {
+        padding: 30px 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 14px;
+    }
+
+
+    /* footer */
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+}
+
+/* responsive layout for tablets and laptops */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+     .navbar{
+        width: 100%;
+        gap: 4rem;
+     }
+
+     .logo{
+        margin-left: 2rem;
+        width: 6rem;
+     }
+
+     .service-cards {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .cards:nth-child(3) {
+        grid-column: span 2; 
+        justify-self: center;
+    }
+}
